@@ -1,0 +1,82 @@
+PROJECT VELOCITY - E5.5D.9
+FULL-MAP GEOMETRY AUDIT
+Generated: 10/12/2026 00:02:22
+
+========== index.html ==========
+  60: <p>The central LK Tower reserve stays clear. The two canals form a connected water network. Bridges preserve road continuity.</p>
+  75: Waterways: 2 connected<br>
+ 116: sun.position.set(-350,800,420);
+ 123: depthWrite:opacity===1
+ 135: const sidewalk=mat(0x9aabb1);
+ 136: const water=mat(0x117eaa);
+ 146: const roadLayer=new THREE.Group();
+ 147: const bridgeLayer=new THREE.Group();
+ 149: scene.add(districtLayer,roadLayer,bridgeLayer,landmarkLayer);
+ 151: function block(parent,w,h,d,m,x,y,z){
+ 155: mesh.position.set(x,y,z);
+ 161: block(scene,1200,5,1200,base,0,-2.7,0);
+ 170: block(
+ 176: // Connected waterways:
+ 181: block(scene,1200,.25,canalWidth,water,0,.55,0);
+ 182: block(scene,canalWidth,.25,1200,water,0,.56,0);
+ 184: // Waterfront edges.
+ 186: block(scene,1200,.5,7,sidewalk,0,.65,z);
+ 189: block(scene,7,.5,1200,sidewalk,x,.65,0);
+ 200: block(roadLayer,565,.2,roadWidth,asphalt,x,.8,z);
+ 205: block(roadLayer,roadWidth,.2,565,asphalt,x,.8,z);
+ 223: block(bridgeLayer,85,.2,20,bridgeMaterial,0,.83,c.z);
+ 225: block(bridgeLayer,85,1.5,1,white,0,1.68,c.z+side*9.5);
+ 228: block(bridgeLayer,20,.2,85,bridgeMaterial,c.x,.83,0);
+ 230: block(bridgeLayer,1,1.5,85,white,c.x+side*9.5,1.68,0);
+ 236:     const lkAccessLayer = new THREE.Group();
+ 237:     lkAccessLayer.name = "LK Tower Access";
+ 238:     scene.add(lkAccessLayer);
+ 274:       block(
+ 275:         lkAccessLayer,
+ 299:       ramp.position.set(
+ 314:       lkAccessLayer.add(ramp);
+ 316:       // Sidewalks along the elevated inner portion.
+ 318:         block(
+ 319:           lkAccessLayer,
+ 333: block(landmarkLayer,95,2,95,white,0,2,0);
+ 334: block(landmarkLayer,55,4,55,asphalt,0,5,0);
+ 340: towerMarker.position.set(0,147,0);
+ 356: marker.position.set(x,101,z);
+ 368: block(
+ 376: pole.position.set(x,26,z);
+ 384: const grid=new THREE.GridHelper(
+ 387: grid.position.y=1.5;
+ 395: roadLayer.visible=e.target.checked;
+ 398: bridgeLayer.visible=e.target.checked;
+ 409: camera.position.set(...position);
+ 419: camera.position.set(0,1550,.01);
+
+========== buildings.js ==========
+  89:   function addBox(parent, w, h, d, mat, x, y, z) {
+  94:     mesh.position.set(x, y, z);
+ 107:     building.position.set(x, 0, z);
+ 109:     addBox(
+ 115:       addBox(
+ 121:       addBox(
+ 127:       addBox(
+ 141:       addBox(
+ 149:       addBox(
+ 159:     addBox(
+
+========== pedestrian.js ==========
+   9:   const sidewalkWidth = 4;
+  10:   const sidewalkOffset = roadHalfWidth + sidewalkWidth / 2 + 1;
+  13:   const sidewalkMaterial = new THREE.MeshStandardMaterial({
+  20:   function addWalkway(x, z, width, depth, type = "sidewalk") {
+  23:       sidewalkMaterial
+  26:     mesh.position.set(x, 0.775, z);
+  48:   // Sidewalks along east-west roads.
+  55:         addWalkway(
+  57:           z + side * sidewalkOffset,
+  59:           sidewalkWidth
+  65:   // Sidewalks along north-south roads.
+  72:         addWalkway(
+  73:           x + side * sidewalkOffset,
+  75:           sidewalkWidth,
+  93:     sidewalkSegments: walkableAreas.length,
+

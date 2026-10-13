@@ -1,0 +1,18 @@
+PROJECT VELOCITY — E5.3 DAYTIME + STREET UPGRADE
+
+INSTALL (Windows):
+1. Back up D:\Github\project-velocity\project-velocity\src\world
+2. Copy the contents of this ZIP's world folder into the project's src\world folder.
+3. Run npm run build and then npm run dev.
+
+CHANGES:
+- Bright blue daytime sky, stronger sun and hemisphere lighting; stars removed.
+- White moving clouds and daylight-compatible building/tower materials.
+- Connected 12-unit asphalt streets, concrete sidewalks, curbs, and dashed lane markings.
+- Collision against generated building footprints using the same lot placement as the renderer.
+- Existing GTA camera, map, fast travel, roof access, district interactions preserved.
+
+NOTES:
+- Road markings are intentionally simple and efficient; this is not yet a detailed traffic simulation.
+- Build was not executed against the entire Vite project because only src/world was supplied.
+- No git changes or deployment performed.

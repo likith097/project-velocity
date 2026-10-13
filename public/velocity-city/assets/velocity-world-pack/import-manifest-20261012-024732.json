@@ -1,0 +1,500 @@
+﻿[
+    {
+        "Category":  "cars",
+        "Name":  "Car by Poly by Google - 75h3mi6uHuC.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Car by Poly by Google - 75h3mi6uHuC.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\cars\\Car by Poly by Google - 75h3mi6uHuC.glb"
+    },
+    {
+        "Category":  "cars",
+        "Name":  "Car by Quaternius - unqqkULtRU.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Car by Quaternius - unqqkULtRU.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\cars\\Car by Quaternius - unqqkULtRU.glb"
+    },
+    {
+        "Category":  "cars",
+        "Name":  "CAR Model by Ignition Labs - 5zUWP5UsLg-.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\CAR Model by Ignition Labs - 5zUWP5UsLg-.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\cars\\CAR Model by Ignition Labs - 5zUWP5UsLg-.glb"
+    },
+    {
+        "Category":  "cars",
+        "Name":  "Police Car by Quaternius - BwwnUrWGmV.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Police Car by Quaternius - BwwnUrWGmV.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\cars\\Police Car by Quaternius - BwwnUrWGmV.glb"
+    },
+    {
+        "Category":  "bridges",
+        "Name":  "Bridge by CreativeTrio - orI7eNSB38.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Bridge by CreativeTrio - orI7eNSB38.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\bridges\\Bridge by CreativeTrio - orI7eNSB38.glb"
+    },
+    {
+        "Category":  "bridges",
+        "Name":  "Bridge by Poly by Google - c5-20y2WaRK.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Bridge by Poly by Google - c5-20y2WaRK.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\bridges\\Bridge by Poly by Google - c5-20y2WaRK.glb"
+    },
+    {
+        "Category":  "bridges",
+        "Name":  "Bridges by Jair Trejo - 3GQlwrbGZhL.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Bridges by Jair Trejo - 3GQlwrbGZhL.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\bridges\\Bridges by Jair Trejo - 3GQlwrbGZhL.glb"
+    },
+    {
+        "Category":  "bridges",
+        "Name":  "scifi_bridge.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\scifi_bridge.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\bridges\\scifi_bridge.glb"
+    },
+    {
+        "Category":  "bridges",
+        "Name":  "Small Bridge by Quaternius - j4KsIuJYnq.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Small Bridge by Quaternius - j4KsIuJYnq.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\bridges\\Small Bridge by Quaternius - j4KsIuJYnq.glb"
+    },
+    {
+        "Category":  "bridges",
+        "Name":  "scifi-bridge.glb",
+        "Source":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\models\\bridges\\scifi-bridge.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\bridges\\scifi-bridge.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-fan.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-fan.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-fan.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-fishing-small.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-fishing-small.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-fishing-small.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-house-a.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-house-a.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-house-a.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-house-b.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-house-b.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-house-b.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-house-c.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-house-c.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-house-c.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-house-d.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-house-d.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-house-d.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-row-large.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-row-large.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-row-large.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-row-small.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-row-small.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-row-small.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-sail-a.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-sail-a.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-sail-a.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-sail-b.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-sail-b.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-sail-b.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-speed-a.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-speed-a.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-speed-a.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-speed-b.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-speed-b.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-speed-b.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-speed-c.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-speed-c.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-speed-c.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-speed-d.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-speed-d.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-speed-d.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-speed-e.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-speed-e.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-speed-e.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-speed-f.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-speed-f.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-speed-f.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-speed-g.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-speed-g.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-speed-g.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-speed-h.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-speed-h.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-speed-h.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-speed-i.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-speed-i.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-speed-i.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-speed-j.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-speed-j.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-speed-j.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-tow-a.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-tow-a.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-tow-a.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-tow-b.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-tow-b.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-tow-b.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-tug-a.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-tug-a.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-tug-a.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-tug-b.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-tug-b.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-tug-b.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat-tug-c.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\boat-tug-c.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat-tug-c.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "Boat by Quaternius - OknDJkGeJ8.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Boat by Quaternius - OknDJkGeJ8.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\Boat by Quaternius - OknDJkGeJ8.glb"
+    },
+    {
+        "Category":  "boats",
+        "Name":  "boat.glb",
+        "Source":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\models\\environment\\boat.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\boats\\boat.glb"
+    },
+    {
+        "Category":  "ships",
+        "Name":  "ship-cargo-a.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\ship-cargo-a.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\ships\\ship-cargo-a.glb"
+    },
+    {
+        "Category":  "ships",
+        "Name":  "ship-cargo-b.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\ship-cargo-b.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\ships\\ship-cargo-b.glb"
+    },
+    {
+        "Category":  "ships",
+        "Name":  "ship-cargo-c.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\ship-cargo-c.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\ships\\ship-cargo-c.glb"
+    },
+    {
+        "Category":  "ships",
+        "Name":  "ship-large.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\ship-large.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\ships\\ship-large.glb"
+    },
+    {
+        "Category":  "ships",
+        "Name":  "ship-ocean-liner.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\ship-ocean-liner.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\ships\\ship-ocean-liner.glb"
+    },
+    {
+        "Category":  "ships",
+        "Name":  "ship-ocean-liner-small.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\ship-ocean-liner-small.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\ships\\ship-ocean-liner-small.glb"
+    },
+    {
+        "Category":  "ships",
+        "Name":  "ship-small.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\ship-small.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\ships\\ship-small.glb"
+    },
+    {
+        "Category":  "ships",
+        "Name":  "ship-small-ghost.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\ship-small-ghost.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\ships\\ship-small-ghost.glb"
+    },
+    {
+        "Category":  "docks",
+        "Name":  "Dock Wide by Quaternius - XndOrGa7rN.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Dock Wide by Quaternius - XndOrGa7rN.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\docks\\Dock Wide by Quaternius - XndOrGa7rN.glb"
+    },
+    {
+        "Category":  "docks",
+        "Name":  "ramp.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\ramp.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\docks\\ramp.glb"
+    },
+    {
+        "Category":  "docks",
+        "Name":  "ramp-wide.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\ramp-wide.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\docks\\ramp-wide.glb"
+    },
+    {
+        "Category":  "traffic",
+        "Name":  "Traffic light by Poly by Google - 57rxXzowK8w.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Traffic light by Poly by Google - 57rxXzowK8w.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\traffic\\Traffic light by Poly by Google - 57rxXzowK8w.glb"
+    },
+    {
+        "Category":  "traffic",
+        "Name":  "arrow.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\arrow.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\traffic\\arrow.glb"
+    },
+    {
+        "Category":  "traffic",
+        "Name":  "arrow-standing.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\arrow-standing.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\traffic\\arrow-standing.glb"
+    },
+    {
+        "Category":  "waterfront",
+        "Name":  "buoy.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\buoy.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\waterfront\\buoy.glb"
+    },
+    {
+        "Category":  "waterfront",
+        "Name":  "buoy-flag.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\buoy-flag.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\waterfront\\buoy-flag.glb"
+    },
+    {
+        "Category":  "waterfront",
+        "Name":  "cargo-container-a.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\cargo-container-a.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\waterfront\\cargo-container-a.glb"
+    },
+    {
+        "Category":  "waterfront",
+        "Name":  "cargo-container-b.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\cargo-container-b.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\waterfront\\cargo-container-b.glb"
+    },
+    {
+        "Category":  "waterfront",
+        "Name":  "cargo-container-c.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\cargo-container-c.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\waterfront\\cargo-container-c.glb"
+    },
+    {
+        "Category":  "waterfront",
+        "Name":  "cargo-pile-a.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\cargo-pile-a.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\waterfront\\cargo-pile-a.glb"
+    },
+    {
+        "Category":  "waterfront",
+        "Name":  "cargo-pile-b.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\cargo-pile-b.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\waterfront\\cargo-pile-b.glb"
+    },
+    {
+        "Category":  "waterfront",
+        "Name":  "shipping-container-a.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\shipping-container-a.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\waterfront\\shipping-container-a.glb"
+    },
+    {
+        "Category":  "waterfront",
+        "Name":  "shipping-container-b.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\shipping-container-b.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\waterfront\\shipping-container-b.glb"
+    },
+    {
+        "Category":  "waterfront",
+        "Name":  "shipping-container-c.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\shipping-container-c.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\waterfront\\shipping-container-c.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "detail-awning.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\detail-awning.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\detail-awning.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "detail-awning-wide.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\detail-awning-wide.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\detail-awning-wide.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "detail-overhang.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\detail-overhang.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\detail-overhang.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "detail-overhang-wide.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\detail-overhang-wide.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\detail-overhang-wide.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "detail-parasol-a.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\detail-parasol-a.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\detail-parasol-a.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "detail-parasol-b.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\detail-parasol-b.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\detail-parasol-b.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "detail-tank.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\detail-tank.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\detail-tank.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "detail-tank-large.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\detail-tank-large.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\detail-tank-large.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "solar-panel-flat.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\solar-panel-flat.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\solar-panel-flat.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "solar-panel-landscape.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\solar-panel-landscape.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\solar-panel-landscape.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "solar-panel-landscape-group.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\solar-panel-landscape-group.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\solar-panel-landscape-group.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "solar-panel-portrait.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\solar-panel-portrait.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\solar-panel-portrait.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "solar-panel-portrait-group.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\solar-panel-portrait-group.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\solar-panel-portrait-group.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "chimney-basic.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\chimney-basic.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\chimney-basic.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "chimney-large.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\chimney-large.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\chimney-large.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "chimney-medium.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\chimney-medium.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\chimney-medium.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "chimney-small.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\chimney-small.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\chimney-small.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "water-tower.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\water-tower.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\water-tower.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "windmill.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\windmill.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\windmill.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "windmill-low.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\windmill-low.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\windmill-low.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "gate.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\gate.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\gate.glb"
+    },
+    {
+        "Category":  "environment",
+        "Name":  "gate-finish.glb",
+        "Source":  "D:\\project-velocity-phase1\\downloads\\assets\\Models\\GLB format\\gate-finish.glb",
+        "Destination":  "D:\\project-velocity-phase1\\E5.5D10-City-Visual\\assets\\velocity-world-pack\\environment\\gate-finish.glb"
+    }
+]

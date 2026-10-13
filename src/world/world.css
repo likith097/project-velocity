@@ -1,0 +1,456 @@
+
+.velocity-world {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #050814;
+  color: #f8fafc;
+  font-family: inherit;
+}
+
+.velocity-world-canvas {
+  position: absolute;
+  inset: 0;
+}
+
+.velocity-world-header {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px clamp(18px, 4vw, 54px);
+  background: linear-gradient(
+    180deg,
+    rgba(5, 8, 20, .94),
+    transparent
+  );
+  pointer-events: none;
+}
+
+.velocity-world-header > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.velocity-world-header strong {
+  font-size: 14px;
+  letter-spacing: .14em;
+}
+
+.velocity-world-header strong span {
+  color: #22d3ee;
+}
+
+.velocity-world-header small {
+  color: #94a3b8;
+  font-size: 10px;
+  letter-spacing: .18em;
+}
+
+.velocity-world-header button {
+  pointer-events: auto;
+  border: 1px solid rgba(34, 211, 238, .55);
+  border-radius: 8px;
+  background: rgba(8, 20, 38, .9);
+  color: #e2faff;
+  padding: 12px 16px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+}
+
+.velocity-world-header button:hover {
+  background: #103149;
+}
+
+.velocity-world-header button:focus-visible,
+.velocity-enter:focus-visible,
+.velocity-district-close:focus-visible {
+  outline: 3px solid #22d3ee;
+  outline-offset: 3px;
+}
+
+.velocity-world-hud {
+  position: absolute;
+  bottom: 24px;
+  left: clamp(18px, 4vw, 54px);
+  right: 18px;
+  max-width: 460px;
+  pointer-events: none;
+  background: rgba(5, 11, 25, .82);
+  border: 1px solid rgba(34, 211, 238, .22);
+  border-radius: 12px;
+  padding: 16px 18px;
+  backdrop-filter: blur(12px);
+}
+
+.velocity-world-hud strong {
+  color: #67e8f9;
+  letter-spacing: .08em;
+  font-size: 12px;
+}
+
+.velocity-world-hud p {
+  margin: 9px 0;
+  font-size: 12px;
+  color: #cbd5e1;
+}
+
+.velocity-world-hud small {
+  color: #94a3b8;
+  line-height: 1.5;
+  display: block;
+}
+
+/* District discovery prompt */
+
+.velocity-district-prompt {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 155px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  min-width: 220px;
+  padding: 18px 26px;
+  border: 1px solid rgba(34, 211, 238, .55);
+  border-radius: 14px;
+  background: rgba(5, 11, 25, .92);
+  box-shadow: 0 0 35px rgba(34, 211, 238, .12);
+  backdrop-filter: blur(18px);
+  pointer-events: none;
+  text-align: center;
+}
+
+.velocity-district-prompt small {
+  color: #94a3b8;
+  font-size: 10px;
+  letter-spacing: .2em;
+}
+
+.velocity-district-prompt strong {
+  color: #67e8f9;
+  font-size: 20px;
+  letter-spacing: .15em;
+}
+
+.velocity-district-prompt span {
+  color: #e2e8f0;
+  font-size: 12px;
+}
+
+.velocity-district-prompt kbd {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: 1px solid rgba(34, 211, 238, .5);
+  border-radius: 6px;
+  background: #11243a;
+  color: #67e8f9;
+  font: inherit;
+  font-weight: 700;
+}
+
+/* District content overlay */
+
+.velocity-district-overlay {
+  position: absolute;
+  z-index: 5;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(3, 7, 18, .78);
+  backdrop-filter: blur(12px);
+}
+
+.velocity-district-panel {
+  position: relative;
+  width: min(100%, 760px);
+  max-height: min(85vh, 780px);
+  overflow-y: auto;
+  padding: clamp(24px, 5vw, 48px);
+  border: 1px solid rgba(34, 211, 238, .45);
+  border-radius: 18px;
+  background: linear-gradient(
+    145deg,
+    #0d1930,
+    #090f20 65%,
+    #19112d
+  );
+  box-shadow: 0 0 70px rgba(34, 211, 238, .1);
+}
+
+.velocity-district-panel > small {
+  display: block;
+  margin-bottom: 12px;
+  color: #67e8f9;
+  font-size: 11px;
+  letter-spacing: .2em;
+}
+
+.velocity-district-panel h2 {
+  margin: 0 0 20px;
+  color: #f8fafc;
+  font-size: clamp(28px, 5vw, 46px);
+  letter-spacing: -.03em;
+}
+
+.velocity-district-panel p {
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+.velocity-district-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  padding: 9px 14px;
+  border: 1px solid rgba(34, 211, 238, .4);
+  border-radius: 8px;
+  background: #11243a;
+  color: #e2faff;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.velocity-district-close:hover {
+  background: #16405a;
+}
+
+/* Existing portfolio entrance button */
+
+.velocity-enter {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(34, 211, 238, .7);
+  background: linear-gradient(
+    120deg,
+    #082536,
+    #25133d
+  );
+  color: #ecfeff;
+  border-radius: 9px;
+  padding: 13px 19px;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.velocity-enter:hover {
+  border-color: #67e8f9;
+  box-shadow: 0 0 24px rgba(34, 211, 238, .15);
+}
+
+.velocity-enter:disabled {
+  opacity: .65;
+  cursor: wait;
+}
+
+@media (max-width: 600px) {
+  .velocity-world-header {
+    padding: 16px;
+  }
+
+  .velocity-world-header strong {
+    font-size: 11px;
+  }
+
+  .velocity-world-header button {
+    font-size: 11px;
+    padding: 10px;
+  }
+
+  .velocity-world-hud {
+    bottom: 14px;
+    left: 14px;
+    right: 14px;
+    padding: 12px;
+  }
+
+  .velocity-world-hud p {
+    font-size: 11px;
+  }
+
+  .velocity-district-prompt {
+    bottom: 180px;
+    min-width: 180px;
+    padding: 14px 18px;
+  }
+
+  .velocity-district-prompt strong {
+    font-size: 16px;
+  }
+
+  .velocity-district-overlay {
+    padding: 12px;
+  }
+
+  .velocity-district-panel {
+    max-height: 85vh;
+    padding: 48px 22px 24px;
+  }
+}
+
+
+/* E4: GTA-style radar and compact controls */
+.velocity-world-hud {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: min(340px, calc(100vw - 28px));
+  max-width: none;
+  right: auto;
+  padding: 12px;
+  border-color: rgba(34, 211, 238, .35);
+}
+.velocity-radar-topline, .velocity-radar-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.velocity-radar-topline { margin-bottom: 9px; }
+.velocity-radar-topline span { font-size: 10px; color: #86efac; letter-spacing: .14em; }
+.velocity-radar-topline i { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #4ade80; box-shadow: 0 0 8px #4ade80; margin-right: 5px; }
+.velocity-radar-map {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.65;
+  overflow: hidden;
+  border: 1px solid rgba(34, 211, 238, .25);
+  border-radius: 8px;
+  background-color: #091322;
+  background-image: linear-gradient(rgba(56, 189, 248, .065) 1px, transparent 1px), linear-gradient(90deg, rgba(56, 189, 248, .065) 1px, transparent 1px);
+  background-size: 12.5% 12.5%;
+}
+.velocity-radar-map svg { display: block; width: 100%; height: 100%; }
+.velocity-radar-north { position: absolute; top: 8px; left: 9px; color: #cbd5e1; font-size: 10px; font-weight: 700; }
+.velocity-radar-footer { margin-top: 8px; font-size: 10px; color: #94a3b8; letter-spacing: .07em; }
+.velocity-radar-footer span:last-child { color: #67e8f9; }
+.velocity-radar-legend { display: flex; flex-wrap: wrap; gap: 6px 11px; margin-top: 10px; }
+.velocity-radar-legend span { display: inline-flex; align-items: center; gap: 5px; color: #a9b9cc; font-size: 9px; letter-spacing: .03em; }
+.velocity-radar-legend i { width: 6px; height: 6px; border-radius: 50%; }
+.velocity-controls { border-top: 1px solid rgba(148, 163, 184, .17); padding-top: 10px; }
+.velocity-controls p { margin: 7px 0; line-height: 1.6; }
+.velocity-controls p span { color: #64748b; margin: 0 3px; }
+.velocity-controls kbd { display: inline-block; margin-right: 3px; padding: 1px 5px; border: 1px solid rgba(103, 232, 249, .25); border-radius: 4px; color: #e2faff; background: #142438; font: inherit; font-size: 10px; }
+.velocity-controls small { margin-top: 8px; }
+@media (max-width: 600px) {
+  .velocity-world-hud { width: min(290px, calc(100vw - 28px)); left: 14px; right: auto; bottom: 14px; padding: 10px; }
+  .velocity-radar-map { aspect-ratio: 2; }
+  .velocity-district-prompt { bottom: 260px; left: auto; right: 14px; transform: none; min-width: 0; max-width: 175px; padding: 12px; }
+}
+
+/* E5.2 city transport */
+.velocity-travel-buttons { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; pointer-events: auto; }
+.velocity-travel-buttons button, .velocity-travel-grid button { cursor: pointer; font: inherit; color: #e2faff; border: 1px solid #397e96; background: #0c2134; border-radius: 8px; padding: 10px 12px; }
+.velocity-travel-buttons button:hover, .velocity-travel-grid button:hover { background: #17445a; }
+.velocity-travel-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 24px; }
+.velocity-travel-grid button { min-height: 60px; text-align: left; }
+@media (max-width: 540px) { .velocity-travel-grid { grid-template-columns: 1fr; } .velocity-world-hud { max-width: 310px; bottom: 12px; padding: 10px; } }
+/* E5.4 transit controls */
+.velocity-transit-overlay { position: absolute; z-index: 15; top: 86px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 18px; padding: 12px 18px; border: 1px solid #6ed7eb; border-radius: 12px; background: rgba(5,25,41,.8); color: white; font-size: 12px; backdrop-filter: blur(8px); }
+.velocity-transit-overlay span { color: #a5dce9; font-size: 10px; }
+.velocity-transit-overlay button { padding: 8px 12px; border: 1px solid #6ed7eb; background: #0a3c50; border-radius: 6px; color: white; cursor: pointer; }
+@media(max-width: 700px) { .velocity-transit-overlay { top: 90px; left: 12px; right: 12px; transform: none; flex-wrap: wrap; } }
+
+/* Project Velocity integrated city */
+.velocity-integrated{position:fixed;inset:0;z-index:9999;background:#07111e}
+.velocity-city-frame{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.velocity-integrated-header{z-index:50;pointer-events:none}
+.velocity-integrated-header button{pointer-events:auto}
+.velocity-integrated-nav{position:absolute;top:80px;left:50%;transform:translateX(-50%);z-index:45;display:flex;flex-wrap:wrap;gap:7px;justify-content:center;max-width:calc(100vw - 24px)}
+.velocity-integrated-nav button{background:rgba(5,18,32,.86);border:1px solid #3d728b;color:#d9f3ff;padding:9px 12px;border-radius:8px;cursor:pointer;font-size:11px;font-weight:700;letter-spacing:.07em}
+.velocity-integrated-nav button:hover{background:#164c6a}
+.velocity-city-loading{position:absolute;inset:0;display:grid;place-items:center;color:#fff;z-index:2;background:#07111e}
+@media(max-width:650px){.velocity-integrated-nav{top:95px}.velocity-integrated-nav button{padding:7px 9px;font-size:10px}}
+
+/* VELOCITY_INSTRUCTIONS_V1 */
+.velocity-integrated-header {
+  align-items: flex-start;
+}
+
+.velocity-instructions-panel {
+  position: absolute;
+  top: 80px;
+  right: clamp(18px, 4vw, 54px);
+  width: min(290px, calc(100vw - 36px));
+  padding: 16px;
+  border: 1px solid rgba(34, 211, 238, .35);
+  border-radius: 12px;
+  background: rgba(5, 16, 30, .92);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, .3);
+  backdrop-filter: blur(12px);
+  pointer-events: none;
+}
+
+.velocity-instructions-panel h2 {
+  margin: 0 0 14px;
+  font-size: 11px;
+  letter-spacing: .13em;
+  color: #67e8f9;
+}
+
+.velocity-instructions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.velocity-instructions-grid > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 5px;
+  border: 1px solid rgba(103, 232, 249, .13);
+  border-radius: 7px;
+  background: rgba(17, 36, 58, .7);
+  text-align: center;
+}
+
+.velocity-instructions-grid kbd {
+  color: #e2faff;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.velocity-instructions-grid span {
+  color: #94a3b8;
+  font-size: 10px;
+}
+
+.velocity-instructions-panel p {
+  margin: 14px 0 0;
+  color: #b6cad9;
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+@media (max-width: 650px) {
+  .velocity-instructions-panel {
+    top: 75px;
+    right: 12px;
+    width: min(245px, calc(100vw - 24px));
+    padding: 12px;
+  }
+
+  .velocity-instructions-grid > div {
+    padding: 7px 4px;
+  }
+}

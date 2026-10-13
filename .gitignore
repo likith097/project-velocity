@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.env.local
+*.milestone-a-backup
+*.tsbuildinfo
+*.milestone-b-backup
+.vercel/
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+.vscode/

@@ -1,0 +1,616 @@
+{
+  "project": "Project Velocity",
+  "version": "waterfront-master-v1",
+  "objectCount": 29,
+  "objects": [
+    {
+      "id": "dock-north",
+      "transform": {
+        "position": {
+          "x": -210,
+          "y": 0.6,
+          "z": -34
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "dock-south",
+      "transform": {
+        "position": {
+          "x": 210,
+          "y": 0.6,
+          "z": 34
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "dock-east",
+      "transform": {
+        "position": {
+          "x": 34,
+          "y": 0.6,
+          "z": -215
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "dock-west",
+      "transform": {
+        "position": {
+          "x": -34,
+          "y": 0.6,
+          "z": 215
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "speedboat-01",
+      "transform": {
+        "position": {
+          "x": -252.5,
+          "y": 0.3,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 1.5707963267948966,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "speedboat-02",
+      "transform": {
+        "position": {
+          "x": 215,
+          "y": 0.3,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 1.5707963267948966,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "speedboat-03",
+      "transform": {
+        "position": {
+          "x": -65,
+          "y": 0.3,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 1.5707963267948966,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "speedboat-04",
+      "transform": {
+        "position": {
+          "x": 65,
+          "y": 0.3,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "sailboat-01",
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0.3,
+          "z": -210
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "sailboat-02",
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0.3,
+          "z": 210
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "houseboat-01",
+      "transform": {
+        "position": {
+          "x": -395,
+          "y": 0.3,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "houseboat-02",
+      "transform": {
+        "position": {
+          "x": 395,
+          "y": 0.3,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "fishing-boat",
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0.3,
+          "z": -395
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "tugboat-01",
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0.3,
+          "z": 395
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "cargo-ship-01",
+      "transform": {
+        "position": {
+          "x": -490,
+          "y": 0.3,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 1.5707963267948966,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "cargo-ship-02",
+      "transform": {
+        "position": {
+          "x": 490,
+          "y": 0.3,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 4.71238898038469,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "cargo-ship-03",
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0.3,
+          "z": -490
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "small-ship-01",
+      "transform": {
+        "position": {
+          "x": 0,
+          "y": 0.3,
+          "z": 490
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "buoy-01",
+      "transform": {
+        "position": {
+          "x": -170,
+          "y": 0.2,
+          "z": 10
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "buoy-02",
+      "transform": {
+        "position": {
+          "x": 170,
+          "y": 0.2,
+          "z": -10
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "buoy-03",
+      "transform": {
+        "position": {
+          "x": 10,
+          "y": 0.2,
+          "z": -365
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "buoy-04",
+      "transform": {
+        "position": {
+          "x": -10,
+          "y": 0.2,
+          "z": 365
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "cargo-stack-01",
+      "transform": {
+        "position": {
+          "x": -210,
+          "y": 0.7,
+          "z": -60
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "cargo-stack-02",
+      "transform": {
+        "position": {
+          "x": -185,
+          "y": 0.7,
+          "z": -60
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "cargo-stack-03",
+      "transform": {
+        "position": {
+          "x": 185,
+          "y": 0.7,
+          "z": 60
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "cargo-stack-04",
+      "transform": {
+        "position": {
+          "x": 210,
+          "y": 0.7,
+          "z": 60
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "cargo-stack-05",
+      "transform": {
+        "position": {
+          "x": 230,
+          "y": 0.7,
+          "z": 60
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "cargo-stack-06",
+      "transform": {
+        "position": {
+          "x": -230,
+          "y": 0.7,
+          "z": -60
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    },
+    {
+      "id": "water-tower",
+      "transform": {
+        "position": {
+          "x": -255,
+          "y": 0.8,
+          "z": -85
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "visible": true
+      }
+    }
+  ]
+}
