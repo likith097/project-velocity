@@ -1702,9 +1702,11 @@ export function createFreeRoamPlayer(scene, camera, controls, buildingGroup) {
     [-60, 75]
   ];
 
+  // VELOCITY_ELEVATOR_GROUND_ACCESS_V2
+  // Clear obsolete colliders along the elevator approach.
   function nearElevatorEntrance(x, z) {
     return elevatorGroundEntrances.some(([ex, ez]) =>
-      Math.hypot(x - ex, z - ez) < 9
+      Math.hypot(x - ex, z - ez) < 18
     );
   }
 
@@ -1801,6 +1803,26 @@ export function createFreeRoamPlayer(scene, camera, controls, buildingGroup) {
     return 0.9;
   }
 
+  // Mobile touch input shares the existing movement and camera system.
+  const mobileInput = { x: 0, y: 0, sprint: false };
+
+  function setMobileMovement(x, y, sprint = false) {
+    mobileInput.x = THREE.MathUtils.clamp(Number(x) || 0, -1, 1);
+    mobileInput.y = THREE.MathUtils.clamp(Number(y) || 0, -1, 1);
+    mobileInput.sprint = Boolean(sprint);
+  }
+
+  function rotateMobileCamera(deltaX, deltaY) {
+    if (!enabled) return;
+
+    yaw -= deltaX * HORIZONTAL_SENSITIVITY;
+
+    pitch = THREE.MathUtils.clamp(
+      pitch + deltaY * MOUSE_SENSITIVITY,
+      MIN_PITCH,
+      MAX_PITCH
+    );
+  }
   function onKeyDown(event) {
     if (godMode && !event.repeat && destinations[event.code]) {
       event.preventDefault();
@@ -2051,18 +2073,28 @@ camera.lookAt(lookTarget);
     }
 
 
-    const horizontal =
+    const keyboardHorizontal =
       Number(keys.has('KeyD') || keys.has('ArrowRight')) -
       Number(keys.has('KeyA') || keys.has('ArrowLeft'));
 
-    const vertical =
+    const keyboardVertical =
       Number(keys.has('KeyW') || keys.has('ArrowUp')) -
       Number(keys.has('KeyS') || keys.has('ArrowDown'));
+
+    const horizontal = THREE.MathUtils.clamp(
+      keyboardHorizontal + mobileInput.x, -1, 1
+    );
+
+    const vertical = THREE.MathUtils.clamp(
+      keyboardVertical + mobileInput.y, -1, 1
+    );
 
     const moving = horizontal !== 0 || vertical !== 0;
 
     const sprint =
-      keys.has('ShiftLeft') || keys.has('ShiftRight');
+      keys.has('ShiftLeft') ||
+      keys.has('ShiftRight') ||
+      mobileInput.sprint;
 
     const speed = sprint ? RUN_SPEED : WALK_SPEED;
 
@@ -2375,6 +2407,8 @@ camera.lookAt(lookTarget);
     setEnabled,
     update,
     teleport,
+    setMobileMovement,
+    rotateMobileCamera,
     get enabled() {
       return enabled;
     }

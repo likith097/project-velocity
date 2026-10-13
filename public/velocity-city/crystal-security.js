@@ -205,6 +205,38 @@ export function createCrystalSecurity(
 
   document.body.appendChild(checkpointPrompt);
 
+  // VELOCITY_MOBILE_SECURITY_TAP_V1
+  const mobileSecurityTouch = window.matchMedia("(pointer: coarse)").matches;
+
+  if (mobileSecurityTouch) {
+    checkpointPrompt.style.pointerEvents = "auto";
+    checkpointPrompt.style.touchAction = "manipulation";
+    checkpointPrompt.style.cursor = "pointer";
+    checkpointPrompt.setAttribute("role", "button");
+    checkpointPrompt.setAttribute("tabindex", "0");
+
+    function activateSecurityPrompt() {
+      if (checkpointPrompt.style.display === "none") return;
+      if (!player.enabled || player.seated) return;
+
+      window.dispatchEvent(new KeyboardEvent("keydown", {
+        key: "e",
+        code: "KeyE",
+        bubbles: true,
+        cancelable: true
+      }));
+    }
+
+    checkpointPrompt.addEventListener("click", activateSecurityPrompt);
+
+    checkpointPrompt.addEventListener("keydown", event => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        activateSecurityPrompt();
+      }
+    });
+  }
+
   for(const entry of crystals) {
     const compound = new THREE.Group();
     compound.position.set(entry.x,0,entry.z);
@@ -500,7 +532,7 @@ export function createCrystalSecurity(
 
       if(atCheckpoint && !c.authorized) {
         checkpointPrompt.textContent=
-          "PRESS E - SECURITY CLEARANCE";
+          (mobileSecurityTouch ? "TAP - SECURITY CLEARANCE" : "PRESS E - SECURITY CLEARANCE");
         promptVisible=true;
       }
 

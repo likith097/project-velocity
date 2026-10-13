@@ -53,6 +53,48 @@ export function createCrystalElevators(
   `;
   document.body.appendChild(prompt);
 
+  // VELOCITY_MOBILE_ELEVATOR_TAP_V1
+  const mobileElevatorTouch = window.matchMedia("(pointer: coarse)").matches;
+
+  if (mobileElevatorTouch) {
+    prompt.style.pointerEvents = "auto";
+    prompt.style.touchAction = "manipulation";
+    prompt.setAttribute("role", "button");
+    prompt.setAttribute("tabindex", "0");
+
+    function activateElevatorPrompt() {
+      if (prompt.style.display === "none") return;
+
+      let code = null;
+
+      if (phase === "ground" && nearest && player.enabled) {
+        code = "KeyI";
+      } else if (phase === "top" && nearCrystal()) {
+        code = "KeyE";
+      } else if (phase === "top" && nearLift()) {
+        code = "KeyI";
+      }
+
+      if (!code) return;
+
+      window.dispatchEvent(new KeyboardEvent("keydown", {
+        key: code === "KeyI" ? "i" : "e",
+        code,
+        bubbles: true,
+        cancelable: true
+      }));
+    }
+
+    prompt.addEventListener("click", activateElevatorPrompt);
+
+    prompt.addEventListener("keydown", event => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        activateElevatorPrompt();
+      }
+    });
+  }
+
   function mat(color,opacity=1,glow=0) {
     return new THREE.MeshStandardMaterial({
       color,
@@ -573,6 +615,15 @@ export function createCrystalElevators(
     if(keys.has("KeyD") || keys.has("ArrowRight")) strafe++;
     if(keys.has("KeyA") || keys.has("ArrowLeft")) strafe--;
 
+    // VELOCITY_MOBILE_ROOFTOP_MOVEMENT_V1
+    // Preserve desktop WASD and support the existing mobile joystick.
+    const touch = window.velocityMobileRooftopInput;
+
+    if (touch) {
+      forward += Number(touch.y) || 0;
+      strafe += Number(touch.x) || 0;
+    }
+
     const magnitude=Math.hypot(forward,strafe);
 
     if(magnitude===0) return;
@@ -782,7 +833,7 @@ export function createCrystalElevators(
 
       if(nearest) {
         prompt.textContent=
-          `PRESS I - ${nearest.entry.name} ELEVATOR`;
+          `${mobileElevatorTouch ? "TAP" : "PRESS I"} - ${nearest.entry.name} ELEVATOR`;
       }
       return;
     }
@@ -833,10 +884,10 @@ export function createCrystalElevators(
 
     if(phase==="top") {
       prompt.textContent=nearCrystal()
-        ? `PRESS E - VIEW ${active.entry.name}`
+        ? `${mobileElevatorTouch ? "TAP" : "PRESS E"} - VIEW ${active.entry.name}`
         : nearLift()
-          ? "WASD - EXPLORE | I - DESCEND"
-          : "WASD - EXPLORE CRYSTAL PLAZA";
+          ? (mobileElevatorTouch ? "TAP - DESCEND" : "WASD - EXPLORE | I - DESCEND")
+          : (mobileElevatorTouch ? "JOYSTICK - EXPLORE CRYSTAL PLAZA" : "WASD - EXPLORE CRYSTAL PLAZA");
     } else if(phase==="activating") {
       prompt.textContent="CRYSTAL ACTIVATING...";
     } else {

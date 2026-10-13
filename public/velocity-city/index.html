@@ -241,6 +241,71 @@ body>header{display:none!important}
 main{height:100dvh!important;display:block!important;flex:1 1 auto!important}
 main>aside{display:none!important}
 #viewport{height:100dvh!important;width:100vw!important}
+
+/* PROJECT VELOCITY MOBILE MINIMAP POSITION */
+@media (max-width: 750px) {
+  #velocity-minimap {
+    left: 10px;
+    top: 105px;
+    bottom: auto;
+    width: 145px;
+    padding: 6px;
+    max-height: min(38dvh, 260px);
+    overflow: hidden;
+  }
+
+  #velocity-minimap-title {
+    font-size: 8px;
+    letter-spacing: .04em;
+    gap: 4px;
+  }
+
+  #velocity-minimap-map {
+    aspect-ratio: 1;
+  }
+
+  #velocity-minimap-footer {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 750px) and (orientation: landscape) {
+  #velocity-minimap {
+    top: 70px;
+    width: 112px;
+    max-height: calc(100dvh - 85px);
+  }
+}
+
+/* PROJECT VELOCITY LANDSCAPE MINIMAP FIX V1 */
+@media (pointer: coarse) and (orientation: landscape) and (max-height: 500px) {
+  #velocity-minimap {
+    position: absolute !important;
+    top: 72px !important;
+    left: 10px !important;
+    bottom: auto !important;
+    width: 112px !important;
+    padding: 5px !important;
+    max-height: calc(100dvh - 82px) !important;
+    overflow: hidden !important;
+  }
+
+  #velocity-minimap-title {
+    font-size: 6px !important;
+    letter-spacing: 0 !important;
+    margin-bottom: 4px !important;
+  }
+
+  #velocity-minimap-footer {
+    font-size: 6px !important;
+    margin-top: 4px !important;
+  }
+
+  .velocity-minimap-marker {
+    font-size: 6px !important;
+    padding: 2px !important;
+  }
+}
 </style></head>
 <body>
 <header>
@@ -344,6 +409,7 @@ import { createCrystalFortressV13 } from "./crystal-fortress-v13.js";
 import {createCityBillboards} from "./city-billboards.js";
 import {createCityLandscaping} from "./city-landscaping.js";
 import {createFreeRoamPlayer} from "./player.js";
+import {installMobileControls} from "./mobile-controls.js";
 import {createCityAssetManager} from "./asset-loader.js";
 import {createCityArchitecture} from "./city-architecture.js";
 import {createCityStreetDetails} from "./city-street-details.js";
@@ -954,6 +1020,7 @@ resize();
 
 $("overview").click();
 velocityPlayer.setEnabled(true);
+installMobileControls(velocityPlayer, renderer.domElement);
 
 // VELOCITY_CRYSTAL_INTERACTIONS_V1
 
@@ -969,6 +1036,39 @@ benchPrompt.style.cssText =
   "font:600 14px Arial;z-index:9999;display:none;" +
   "pointer-events:none";
 document.body.appendChild(benchPrompt);
+
+// Mobile: reuse the existing keyboard interaction handler.
+const velocityTouchDevice = window.matchMedia("(pointer: coarse)").matches;
+
+if (velocityTouchDevice) {
+  benchPrompt.style.pointerEvents = "auto";
+  benchPrompt.style.cursor = "pointer";
+  benchPrompt.style.touchAction = "manipulation";
+  benchPrompt.setAttribute("role", "button");
+  benchPrompt.setAttribute("tabindex", "0");
+  benchPrompt.setAttribute("aria-label", "Sit or stand");
+
+  function activateBenchPrompt() {
+    if (benchPrompt.style.display === "none") return;
+    if (!velocityPlayer.enabled || crystalPanelOpen) return;
+
+    window.dispatchEvent(new KeyboardEvent("keydown", {
+      key: "e",
+      code: "KeyE",
+      bubbles: true,
+      cancelable: true
+    }));
+  }
+
+  benchPrompt.addEventListener("click", activateBenchPrompt);
+
+  benchPrompt.addEventListener("keydown", event => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      activateBenchPrompt();
+    }
+  });
+}
 
 window.addEventListener("keydown", event => {
   if (event.code !== "KeyE" || event.repeat ||
@@ -1588,8 +1688,8 @@ if (velocityPlayer.enabled) {
       ? "block" : "none";
 
   benchPrompt.textContent = velocityPlayer.seated
-    ? "Press E to Stand"
-    : "Press E to Sit";
+    ? (velocityTouchDevice ? "Tap to Stand" : "Press E to Stand")
+    : (velocityTouchDevice ? "Tap to Sit" : "Press E to Sit");
 } else {
   benchPrompt.style.display = "none";
 }

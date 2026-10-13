@@ -31,6 +31,7 @@ export default function VelocityWorld({
 }) {
   const [active, setActive] = useState<DistrictName | null>(null)
   const [loaded, setLoaded] = useState(false)
+  const [instructionsOpen, setInstructionsOpen] = useState(false)
   const iframeRef = useRef<HTMLIFrameElement>(null)
 
   const sendToCity = useCallback(
@@ -146,15 +147,36 @@ export default function VelocityWorld({
         <button type="button" onClick={onExit}>
           Exit World
         </button>
-        <aside className="velocity-instructions-panel" aria-label="Controls and instructions">
+        <button
+          type="button"
+          className="velocity-instructions-toggle"
+          aria-expanded={instructionsOpen}
+          aria-controls="velocity-instructions-content"
+          onClick={() => setInstructionsOpen((open) => !open)}
+        >
+          {instructionsOpen ? 'Close Instructions' : 'Instructions'}
+        </button>
+        <aside
+          id="velocity-instructions-content"
+          className={`velocity-instructions-panel${instructionsOpen ? ' is-open' : ''}`}
+          aria-label="Controls and instructions"
+        >
           <h2>CONTROLS &amp; INSTRUCTIONS</h2>
-          <div className="velocity-instructions-grid">
+          <div className="velocity-instructions-grid velocity-desktop-instructions">
             <div><kbd>W A S D</kbd><span>Move</span></div>
             <div><kbd>Mouse</kbd><span>Look around</span></div>
             <div><kbd>E</kbd><span>Interact / Security</span></div>
             <div><kbd>I</kbd><span>Enter elevator</span></div>
             <div><kbd>Esc</kbd><span>Release mouse</span></div>
             <div><kbd>M</kbd><span>Map / World</span></div>
+          </div>
+          <div className="velocity-instructions-grid velocity-mobile-instructions">
+            <div><kbd>Joystick</kbd><span>Move</span></div>
+            <div><kbd>Swipe</kbd><span>Look around</span></div>
+            <div><kbd>RUN</kbd><span>Toggle sprint</span></div>
+            <div><kbd>INTERACT</kbd><span>Objects / Security</span></div>
+            <div><kbd>ELEVATOR</kbd><span>Use elevator</span></div>
+            <div><kbd>MAP</kbd><span>World map</span></div>
           </div>
           <p>
             Explore the five districts, obtain security clearance,
