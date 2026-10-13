@@ -36,11 +36,11 @@ export const projects = [
     description:
       'A phased, game-inspired engineering portfolio featuring a recruiter-ready interface and an explorable cyberpunk 3D city.',
     tags: ['React', 'TypeScript', 'Vite', 'Three.js', 'Interactive UI'],
-    live: '',
-    github: '',
+    live: 'https://project-velocity-nine.vercel.app/',
+    github: 'https://github.com/likith097/project-velocity',
     theme: 'orange',
     symbol: 'LK',
-    status: 'IN DEVELOPMENT',
+    status: 'LIVE',
   },
 ]
 
