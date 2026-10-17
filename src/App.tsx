@@ -32,6 +32,19 @@ const GMAIL_COMPOSE = gmailCompose
 function App(){
  const [menuOpen,setMenuOpen]=useState(false)
   const [worldOpen,setWorldOpen]=useState(false)
+
+ // PROJECT VELOCITY MOBILE LANDSCAPE GATE V1
+ const [mobilePortrait,setMobilePortrait]=useState(() =>
+   window.matchMedia('(pointer: coarse) and (orientation: portrait)').matches
+ )
+
+ useEffect(()=>{
+   const media=window.matchMedia('(pointer: coarse) and (orientation: portrait)')
+   const update=()=>setMobilePortrait(media.matches)
+   update()
+   media.addEventListener('change',update)
+   return()=>media.removeEventListener('change',update)
+ },[])
  const [quick,setQuick]=useState(false)
  const [expanded,setExpanded]=useState<number[]>([0])
  const [reduced,setReduced]=useState(false)
@@ -123,7 +136,89 @@ function App(){
   <section className="contact-section" id="contact"><div className="section-wrap contact-inner"><div className="contact-overline"><span className="signal-dot"/> CHANNEL OPEN // LET'S CONNECT</div><h2>Have something<br/><span className="gradient-text">in mind?</span></h2><p>I'm open to software engineering opportunities and conversations about building great products. Let's make something happen.</p><div className="contact-buttons"><a className="btn btn-primary" href={GMAIL_COMPOSE} target="_blank" rel="noopener noreferrer">Get in touch <Mail size={18}/></a><button className="btn btn-outline" onClick={copyEmail}>{copied?<Check size={17}/>:<Mail size={17}/>} {copied?'Email copied':'Copy email'}</button></div><div className="contact-social"><a href={contact.linkedin} target="_blank" rel="noreferrer">LINKEDIN <ArrowUpRight size={16}/></a><a href={contact.github} target="_blank" rel="noreferrer">GITHUB <ArrowUpRight size={16}/></a><a href={RESUME} download="Likith-Kumar-Resume.pdf">RESUME <Download size={16}/></a></div></div></section>
   </main>
   <footer className="footer section-wrap"><div className="footer-brand"><span className="brand-mark">LK<span className="brand-dot">.</span></span><span>PROJECT VELOCITY<br/><small>PHASE 01 / RECRUITER EDITION</small></span></div><span>© {new Date().getFullYear()} Likith Kumar. Built with intention.</span><button className="footer-settings" onClick={()=>setSettingsOpen(true)}><MoonStar size={16}/> Preferences</button><a href="#home" className="back-top">BACK TO TOP ↑</a></footer>
-     {worldOpen && <Suspense fallback={<div className="velocity-world" role="status" style={{display:'grid',placeItems:'center'}}>Initializing Velocity City…</div>}><VelocityWorld onExit={()=>setWorldOpen(false)} /></Suspense>}
+     {worldOpen && (
+  mobilePortrait ? (
+    <section
+      role="dialog"
+      aria-modal="true"
+      aria-label="Rotate device to enter the 3D world"
+      style={{
+        position:'fixed',
+        inset:0,
+        zIndex:99999,
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'center',
+        padding:24,
+        background:'radial-gradient(circle at 50% 35%, #122f49 0%, #080e1b 65%, #050913 100%)',
+        color:'#e7f8ff',
+        textAlign:'center'
+      }}
+    >
+      <div style={{maxWidth:420}}>
+        <div
+          aria-hidden="true"
+          style={{
+            fontSize:74,
+            color:'#70e2ff',
+            marginBottom:24,
+            filter:'drop-shadow(0 0 24px rgba(112,226,255,.5))'
+          }}
+        >
+          ↻
+        </div>
+        <div style={{
+          color:'#70e2ff',
+          letterSpacing:4,
+          fontSize:12,
+          marginBottom:16
+        }}>
+          PROJECT VELOCITY // SYSTEM NOTICE
+        </div>
+        <h2 style={{
+          fontSize:'clamp(26px, 7vw, 42px)',
+          marginBottom:18
+        }}>
+          ROTATE YOUR DEVICE
+        </h2>
+        <p style={{
+          color:'#b6c8d8',
+          lineHeight:1.7,
+          marginBottom:30
+        }}>
+          The immersive 3D world is designed for landscape viewing.
+          Rotate your phone horizontally to begin exploring.
+        </p>
+        <button
+          type="button"
+          onClick={()=>setWorldOpen(false)}
+          style={{
+            border:'1px solid rgba(112,226,255,.45)',
+            borderRadius:8,
+            background:'rgba(112,226,255,.08)',
+            color:'#e7f8ff',
+            padding:'13px 22px',
+            cursor:'pointer'
+          }}
+        >
+          EXIT TO PORTFOLIO
+        </button>
+      </div>
+    </section>
+  ) : (
+    <Suspense fallback={
+      <div
+        className="velocity-world"
+        role="status"
+        style={{display:'grid',placeItems:'center'}}
+      >
+        Initializing Velocity City...
+      </div>
+    }>
+      <VelocityWorld onExit={()=>setWorldOpen(false)} />
+    </Suspense>
+  )
+)}
 
 {quick&&<div className="modal-backdrop" onMouseDown={e=>{if(e.target===e.currentTarget)setQuick(false)}}><div className="quick-modal" role="dialog" aria-modal="true" aria-label="Quick portfolio view"><div className="modal-header"><div><span className="mono muted">RECRUITER MODE / QUICK ACCESS</span><h2>Likith Kumar <span className="gradient-text">↗</span></h2><p>Software Engineer · Full Stack · Cloud & AI</p></div><button className="icon-btn" aria-label="Close quick view" onClick={()=>setQuick(false)}><X size={22}/></button></div><div className="quick-content"><div className="quick-stat"><BriefcaseBusiness size={18}/><span>PayPal · PNC · Groww</span></div><div className="quick-stat"><ShieldCheck size={18}/><span>Open to opportunities · United States</span></div><h3>Projects</h3>{projects.map(p=><div className="quick-row" key={p.id}><div><strong>{p.name}</strong><small>{p.category}</small></div>{p.live?<a href={p.live} target="_blank" rel="noreferrer" aria-label={'Open '+p.name}><ExternalLink size={18}/></a>:<span className="muted">PHASE 01</span>}</div>)}<h3>Core stack</h3><p>Java · Spring Boot · Python · React · TypeScript · AWS · Kafka · Kubernetes · Generative AI</p><h3>Education</h3><p>MS Computer Science, University of Alabama at Birmingham (2025)</p><div className="quick-actions"><a className="btn btn-primary" href={RESUME} download="Likith-Kumar-Resume.pdf"><Download size={16}/> Download resume</a><a className="btn btn-outline" href={GMAIL_COMPOSE} target="_blank" rel="noopener noreferrer"><Mail size={16}/> Email me</a></div></div></div></div>}
   {settingsOpen&&<div className="modal-backdrop" onMouseDown={e=>{if(e.target===e.currentTarget)setSettingsOpen(false)}}><div className="settings-modal" role="dialog" aria-modal="true" aria-label="Display preferences"><div className="modal-header"><div><span className="mono muted">SYSTEM / PREFERENCES</span><h2>Display settings</h2></div><button className="icon-btn" onClick={()=>setSettingsOpen(false)} aria-label="Close settings"><X size={22}/></button></div><label className="settings-row"><span>Reduce animation<small>Limit non-essential movement and transitions</small></span><input type="checkbox" checked={reduced} onChange={e=>setReduced(e.target.checked)}/></label><p className="settings-note">Additional graphics, audio, and camera preferences are planned for the immersive 3D phase.</p></div></div>}
